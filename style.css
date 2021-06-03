@@ -92,6 +92,7 @@ header nav span {
 header #home-link {
 	align-items: center;
 	display: flex;
+	text-decoration: none;
 }
 
 header #logo {
@@ -135,6 +136,12 @@ input[type=submit]:active {
 	top: 2px;
 }
 
+main {
+	background: url("./assets/earthglobe.png") center top no-repeat;
+	background-size: 700px;
+	margin-top: 1em;
+}
+
 p {
 	font-size: 10pt;
 }
@@ -157,9 +164,21 @@ section,
 }
 
 #promo .promo .image {
-	background: url("./assets/Proboscis.jpg") center center no-repeat;
+	background: none center center no-repeat;
 	background-size: cover;
 	width: 72%;
+}
+
+#promo .promo .image.group-editing {
+	background-image: url("./assets/klippene.gif");
+}
+
+#promo .promo .image.predictable-results {
+	background-image: url("./assets/tyne.PNG");
+}
+
+#promo .promo .image.unique-models {
+	background-image: url("./assets/testenings9.gif");
 }
 
 #promo .promo .image:first-child {
@@ -229,7 +248,21 @@ section,
 }
 
 #signup {
+	position: relative;
 	text-align: center;
+}
+
+#signup::after {
+	background: url("./assets/sparkle.svg") center center no-repeat;
+	background-size: contain;
+	content: "";
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	margin-left: -320px;
+	top: 4px;
+	width: 40px;
+	z-index: 5;
 }
 
 #signup h2 {
@@ -246,8 +279,9 @@ section,
 }
 
 #splash {
-	margin-bottom: 3em;
-	margin-top: 4em;
+	padding-bottom: 2em;
+	padding-top: 3em;
+	position: relative;
 	text-align: center;
 }
 
@@ -260,6 +294,19 @@ section,
 	position: relative;
 	width: 370px;
 	z-index: 3;
+}
+
+#splash::after {
+	background: url("./assets/sparkle.png") center center no-repeat;
+	background-size: contain;
+	content: "";
+	height: 40px;
+	position: absolute;
+	right: 50%;
+	margin-right: -164px;
+	top: 29px;
+	width: 40px;
+	z-index: 5;
 }
 
 #splash h2 em {
