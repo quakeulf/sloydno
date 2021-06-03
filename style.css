@@ -142,6 +142,17 @@ main {
 	margin-top: 1em;
 }
 
+ol,
+ul {
+	list-style-position: inside;
+	padding: 0;
+}
+
+ol li,
+ul li {
+	margin-bottom: 0.75em;
+}
+
 p {
 	font-size: 10pt;
 }
@@ -153,6 +164,41 @@ section,
 	max-width: 770px;
 	padding-left: 1em;
 	padding-right: 1em;
+}
+
+#features {
+	display: flex;
+}
+
+#features aside {
+	font-size: 8pt;
+	font-style: italic;
+	margin-top: 4em;
+}
+
+#features em {
+	color: var(--color-blue);
+}
+
+#features .description,
+#features .features {
+	background: var(--color-magenta);
+	box-sizing: border-box;
+	padding: 2em;
+	width: 50%;
+}
+
+#features .description h3 {
+	margin-bottom: 0.5em;
+}
+
+#features .description p {
+	color: white;
+	margin: 1em 0 4em;
+}
+
+#features .features {
+	background: white;
 }
 
 #promo {
