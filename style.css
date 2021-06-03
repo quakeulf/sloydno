@@ -6,8 +6,7 @@ Blå:
 */
 
 :root {
-	--color-blue: #0066f9;
-	--color-blue-light: #57b9f3;
+	--color-blue: #00bbf9;
 	--color-cyan: #00f5d4;
 	--color-grey: #1b212c;
 	--color-magenta: #f15bb5;
@@ -53,11 +52,16 @@ h2 {
 }
 
 h2 a {
-	color: var(--color-blue-light);
+	color: var(--color-blue);
 }
 
 h2 em {
 	color: var(--color-cyan);
+}
+
+h3 {
+	font-style: italic;
+	margin: 0 0 1.5em;
 }
 
 header {
@@ -69,7 +73,7 @@ header h1 {
 }
 
 header h1 em {
-	color: var(--color-blue-light);
+	color: var(--color-blue);
 }
 
 header nav {
@@ -108,6 +112,10 @@ header .container {
 	justify-content: space-between;
 }
 
+p {
+	font-size: 10pt;
+}
+
 section,
 .container {
 	margin-left: auto;
@@ -115,6 +123,86 @@ section,
 	max-width: 770px;
 	padding-left: 1em;
 	padding-right: 1em;
+}
+
+#promo {
+	background: white;
+}
+
+#promo .promo {
+	display: flex;
+}
+
+#promo .promo .image {
+	background: url("./assets/Proboscis.jpg") center center no-repeat;
+	background-size: cover;
+	width: 72%;
+}
+
+#promo .promo .image:first-child {
+	margin-right: -12%;
+}
+
+#promo .promo .image:last-child {
+	margin-left: -12%;
+}
+
+#promo .promo .text {
+	padding: 2em;
+	width:  40%;
+}
+
+#promo .promo .text:first-child {
+	clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+	padding-right: calc(2em + 10%);
+}
+
+#promo .promo .text:last-child {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+	padding-left: calc(2em + 10%);
+}
+
+#promo .promo.blue .text {
+	background: var(--color-blue);
+}
+
+#promo .promo.green .text {
+	background: var(--color-cyan);
+}
+
+#promo .promo.red .text {
+	background: var(--color-magenta);
+}
+
+#promo .video {
+	display: flex;
+	padding: 2em;
+}
+
+#promo .video .text {
+	flex: 1;
+	margin-left: 2em;
+}
+
+#promo .video .video-container {
+	flex: 2;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+#promo .video .video-container::after {
+	display: block;
+	content: "";
+	padding-top: 56.25%;
+}
+
+#promo .video .video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #signup {
@@ -172,7 +260,7 @@ section,
 }
 
 .signup-form {
-	background: var(--color-blue-light);
+	background: var(--color-blue);
 	clip-path: polygon(0 0, 100% 27%, 94% 91%, 9% 100%);
 	margin: 0 auto;
 	padding: 3.5em 0 2em;
