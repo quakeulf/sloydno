@@ -12,12 +12,12 @@
 @font-face {
 	font-family: "Montserrat";
 	font-weight: bold;
-	src: url("./Montserrat/Montserrat-Bold.ttf") format("truetype");
+	src: url("./Montserrat/Montserrat-Black.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Montserrat";
 	font-style: italic;
 	font-weight: bold;
-	src: url("./Montserrat/Montserrat-BoldItalic.ttf") format("truetype");
+	src: url("./Montserrat/Montserrat-BlackItalic.ttf") format("truetype");
 }
