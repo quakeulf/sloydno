@@ -34,9 +34,8 @@ header h1 {
 	margin: 0 0 0 0.5em;
 }
 
-header h1 span {
+header h1 em {
 	color: var(--color-blue-light);
-	font-style: italic;
 }
 
 header nav {
@@ -80,10 +79,67 @@ header .container {
 	justify-content: space-between;
 }
 
+section,
 .container {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 770px;
-	padding: 0 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#splash {
+	margin-bottom: 3em;
+	margin-top: 4em;
+	text-align: center;
+}
+
+#splash h2 {
+	background: white;
+	clip-path: polygon(18% 10%, 89% 0, 100% 100%, 0 87%);
+	font-size: 28pt;
+	font-style: italic;
+	margin: 0 auto;
+	padding: 0.5em 0 0.7em;
+	position: relative;
+	width: 370px;
+	z-index: 3;
+}
+
+#splash h2 em {
+	background: var(--color-cyan);
+	clip-path: polygon(31% 0, 100% 9%, 77% 100%, 0 70%);
+	margin: -0.45em;
+	padding: 0.1em 0.5em 0.2em 1em;
+}
+
+#splash .signup-form {
+	background: var(--color-blue-light);
+	clip-path: polygon(0 0, 100% 27%, 94% 91%, 9% 100%);
+	margin: -2.5em auto 0;
+	padding: 3.5em 0 2em;
+	position: relative;
+	width: 550px;
+	z-index: 2;
+}
+
+#splash .description {
+	background: var(--color-grey);
+	clip-path: polygon(0 17%, 86% 0, 100% 100%, 8% 78%);
+	color: white;
+	font-size: 10pt;
+	margin: -3em auto 0;
+	padding: 3em 5em;
+	position: relative;
+	width: 300px;
+	z-index: 1;
+}
+
+#splash .description em {
+	color: var(--color-cyan);
+	display: block;
+	font-size: 12pt;
+	font-weight: bold;
 }
 
 @media (max-width: 420px) {
