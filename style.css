@@ -1,0 +1,79 @@
+/*
+Bakgrunn: #1b212c
+Cyan: 
+Magenta: 
+Blå: 
+*/
+
+:root {
+	--color-blue: #0066f9;
+	--color-blue-light: #57b9f3;
+	--color-cyan: #00f5d4;
+	--color-grey: #1b212c;
+	--color-magenta: #f15bb5;
+}
+
+body {
+	background: var(--color-grey);
+	color: black;
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: white;
+}
+
+header a {
+	color: inherit;
+	text-decoration: none;
+}
+
+header h1 {
+	font-weight: normal;
+	margin: 0;
+}
+
+header h1 span {
+	color: var(--color-blue-light);
+	font-style: italic;
+}
+
+header nav {
+	align-items: center;
+	display: flex;
+	font-weight: bold;
+	position: relative;
+}
+
+header nav a {
+	display: block;
+}
+
+header nav a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
+header nav span {
+	background: var(--color-magenta);
+	display: block;
+	height: 64px;
+	width:  34px;
+
+	clip-path: polygon(60% 0%, 80% 0%, 40% 100%, 20% 100%);
+}
+
+header .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 770px;
+	padding: 0 1em;
+}
+
