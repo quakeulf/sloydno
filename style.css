@@ -111,7 +111,8 @@ header .container {
 }
 
 input[type=email],
-input[type=text] {
+input[type=text],
+textarea {
 	background: white;
 	border: 0;
 	border-radius: 0.5em;
@@ -193,6 +194,48 @@ section,
 	line-height: 1.5em;
 	margin: 0;
 	width: 50%;
+}
+
+#contact-form {
+	background: var(--color-cyan);
+	box-sizing: border-box;
+	display: flex;
+	padding: 2em;
+}
+
+#contact-form input,
+#contact-form textarea {
+	box-sizing: border-box;
+	display: block;
+	margin: 0 0 1em;
+}
+
+#contact-form input[type=text],
+#contact-form textarea {
+	width: 60%;
+}
+
+#contact-form input[type=email],
+#contact-form input[type=submit] {
+	width: 36%;
+}
+
+#contact-form form {
+	align-items: flex-start;
+	display: flex;
+	flex: 4;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#contact-form .instructions {
+	flex: 1;
+	font-size: 9pt;
+	margin-right: 3em;
+}
+
+#contact-form .instructions p:first-child {
+	margin-top: 0;
 }
 
 #features {

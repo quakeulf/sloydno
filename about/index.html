@@ -16,7 +16,7 @@
 	<body>
 		<header>
 			<div class="container">
-				<a id="home-link" href="/">
+				<a id="home-link" href="../">
 					<svg id="logo" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 					    <g id="Logoe" transform="matrix(0.995766,0,0,2.66834,-3126.15,-1605.08)">
 					        <g transform="matrix(1.00425,0,0,0.374765,3139.45,608.647)">
@@ -30,9 +30,9 @@
 					<h1>Sloyd<em>.ai</em></h1>
 				</a>
 				<nav>
-					<a href="/about">About</a>
+					<a href="./">About</a>
 					<span></span>
-					<a href="/about#contact">Contact</a>
+					<a href="#contact">Contact</a>
 				</nav>
 			</div>
 		</header>
@@ -108,6 +108,26 @@
 						</p>
 					</div>
 				</div>
+			</section>
+
+			<div id="contact">
+				<h2>Contact <em>Us</em></h2>
+			</div>
+
+			<section id="contact-form">
+				<div class="instructions">
+					<p>Maybe you have ideas for new props or features, an inquiry about working together, or just general feedback?</p>
+					<p>We'd love to hear from you.</p>
+				</div>
+				<form action="https://formspree.io/f/mknkrybp" method="POST">
+					<label class="sr-only" for="contact-name">Name</label>
+					<input id="contact-name" type="text" name="name" placeholder="Please enter your name">
+					<label class="sr-only" for="contact-email">E-mail address</label>
+					<input id="contact-email" type="email" name="_replyto" placeholder="...and your e-mail">
+					<label class="sr-only" for="contact-message">Message</label>
+					<textarea name="message" placeholder="Write something here. UwU"></textarea>
+					<input type="submit" value="Send!">
+				</form>
 			</section>
 
 		</main>
