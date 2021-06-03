@@ -122,6 +122,7 @@ input[type=text] {
 }
 
 input[type=submit] {
+	-webkit-appearance: none;
 	background: var(--color-magenta);
 	border: 0;
 	border-radius: 0.5em;
