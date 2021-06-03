@@ -130,15 +130,10 @@ input[type=submit] {
 	font-size: 16pt;
 	font-style: italic;
 	font-weight: bold;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 	position: relative;
 	text-shadow: 0 2px rgba(0, 0, 0, 0.3);
 	top: 0;
-}
-
-input[type=submit]:hover {
-	box-shadow: 0 4px 0 var(--color-grey);
-	top: -1px;
 }
 
 input[type=submit]:active {
@@ -207,6 +202,10 @@ section,
 #features .description p {
 	color: white;
 	margin: 1em 0 4em;
+}
+
+#features .description p:last-child {
+	margin-bottom: 1em;
 }
 
 #features .features {
@@ -295,14 +294,15 @@ section,
 	width:  40%;
 }
 
-#promo .promo .text:first-child {
-	clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
-	padding-right: calc(2em + 10%);
-}
-
-#promo .promo .text:last-child {
+#promo .promo.blue .text {
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 	padding-left: calc(2em + 10%);
+}
+
+#promo .promo.green .text,
+#promo .promo.red .text {
+	clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+	padding-right: calc(2em + 10%);
 }
 
 #promo .promo .text p {
@@ -397,8 +397,8 @@ section,
 	height: 40px;
 	position: absolute;
 	right: 50%;
-	margin-right: -164px;
-	top: 29px;
+	margin-right: -165px;
+	top: 25px;
 	width: 40px;
 	z-index: 5;
 }
@@ -407,6 +407,7 @@ section,
 	background: white;
 	color: black;
 	clip-path: polygon(18% 10%, 89% 0, 100% 100%, 0 87%);
+	font-size: 28pt;
 	margin: 0 auto;
 	padding: 0.5em 0 0.7em;
 	position: relative;
@@ -455,14 +456,18 @@ section,
 	background: var(--color-blue);
 	clip-path: polygon(0 0, 100% 27%, 94% 91%, 9% 100%);
 	margin: 0 auto;
-	padding: 3.5em 3em 2em;
+	padding: 3.5em 4em 2em;
 	width: 500px;
 }
 
 .signup-form input {
 	display: block;
-	flex: 1;
+	flex: 3;
 	margin: 0 0.5em;
+}
+
+.signup-form input[type=submit] {
+	flex: 2;
 }
 
 .signup-form .form-content {
@@ -479,6 +484,16 @@ section,
 }
 
 @media (max-width: 640px) {
+	h2,
+	h2.container {
+		font-size: 18pt;
+		padding: 0 1em;
+	}
+
+	header {
+		padding: 0 2em;
+	}
+
 	header h1 {
 		margin: 0;
 	}
@@ -489,5 +504,116 @@ section,
 
 	header #logo {
 		display: none;
+	}
+
+	section,
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#features {
+		display: block;
+	}
+
+	#features .description,
+	#features .features {
+		width: auto;
+	}
+
+	#plan .plan-section {
+		border-bottom: 2px solid var(--color-grey);
+		border-right: 0;
+		padding: 2em;
+		width: auto;
+	}
+
+	#plan .plan-section:last-child {
+		border-bottom: 0;
+	}
+
+	#plan .plan-sections {
+		display: block;
+		padding: 0;
+	}
+
+	#promo .promo {
+		display: block;
+	}
+
+	#promo .promo .image {
+		display: none;
+	}
+
+	#promo .promo .text {
+		margin-top: -2em;
+		width: auto;
+	}
+
+	#promo .promo.blue .text {
+		clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+		padding: 3em 2em;
+	}
+
+	#promo .promo.green .text {
+		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+		padding: 3em 2em 2em;
+	}
+
+	#promo .promo.red .text {
+		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+		padding: 3em 2em;
+	}
+
+	#promo .video {
+		display: block;
+		padding: 0;
+	}
+
+	#promo .video .text {
+		margin: 0;
+		padding: 2em;
+	}
+
+	#signup h2 {
+		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 80%);
+		margin-bottom: -2em;
+		position: relative;
+		width: auto;
+		z-index: 2;
+	}
+
+	#signup::after {
+		display: none;
+	}
+
+	#splash {
+		padding-bottom: 0;
+	}
+
+	#splash .description {
+		clip-path: none;
+		margin-top: -1em;
+		padding: 2em 0 1em;
+		width: auto;
+	}
+
+	.signup-form {
+		clip-path: polygon(0 0, 100% 16%, 100% 95%, 0 100%);
+		padding: 3.5em 0 0.5em;
+		width: 100%;
+	}
+
+	.signup-form input {
+		margin: 1em auto;
+	}
+
+	.signup-form input[type=email],
+	.signup-form input[type=text] {
+		width: 80%;
+	}
+
+	.signup-form .form-content {
+		display: block;
 	}
 }
