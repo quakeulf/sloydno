@@ -31,8 +31,7 @@ header a {
 }
 
 header h1 {
-	font-weight: normal;
-	margin: 0;
+	margin: 0 0 0 0.5em;
 }
 
 header h1 span {
@@ -58,11 +57,21 @@ header nav a:hover {
 
 header nav span {
 	background: var(--color-magenta);
+	clip-path: polygon(70% 0%, 90% 0%, 30% 100%, 10% 100%);
 	display: block;
 	height: 64px;
-	width:  34px;
+	margin: 0 1em;
+	width: 34px;
+}
 
-	clip-path: polygon(60% 0%, 80% 0%, 40% 100%, 20% 100%);
+header #home-link {
+	align-items: center;
+	display: flex;
+}
+
+header #logo {
+	height: 52px;
+	width: 52px;
 }
 
 header .container {
@@ -77,3 +86,16 @@ header .container {
 	padding: 0 1em;
 }
 
+@media (max-width: 420px) {
+	header h1 {
+		margin: 0;
+	}
+
+	header nav span {
+		margin: 0;
+	}
+
+	header #logo {
+		display: none;
+	}
+}
