@@ -117,6 +117,7 @@ textarea {
 	border: 0;
 	border-radius: 0.5em;
 	box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.3);
+	font-family: "Lato", sans-serif;
 	font-size: 10pt;
 	min-width: 3em;
 	padding: 1.25em 0.5em;
@@ -210,14 +211,18 @@ section,
 	margin: 0 0 1em;
 }
 
-#contact-form input[type=text],
-#contact-form textarea {
+#contact-form input[type=text] {
 	width: 60%;
 }
 
 #contact-form input[type=email],
 #contact-form input[type=submit] {
 	width: 36%;
+}
+
+#contact-form textarea {
+	height: 6em;
+	width: 60%;
 }
 
 #contact-form form {
@@ -552,6 +557,10 @@ section,
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#team .profile h3 {
+	width: 50%;
+}
+
 #team .profile img {
 	display: block;
 }
@@ -569,7 +578,7 @@ section,
 	clip-path: polygon(0 0, 100% 27%, 94% 91%, 9% 100%);
 	margin: 0 auto;
 	padding: 3.5em 4em 2em;
-	width: 500px;
+	width: 520px;
 }
 
 .signup-form input {
@@ -622,6 +631,42 @@ section,
 	.container {
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	#about {
+		display: block;
+		padding: 0;
+	}
+
+	#about h2 {
+		width: auto;
+		margin: 1.25em 1.25em 0;
+		padding: 0;
+	}
+
+	#about .description {
+		margin: 1em 2em 3em;
+		width: auto;
+	}
+
+	#contact-form,
+	#contact-form form {
+		display: block;
+	}
+
+	#contact-form input[type=email],
+	#contact-form input[type=text],
+	#contact-form textarea {
+		width: 100%;
+	}
+
+	#contact-form input[type=submit] {
+		margin: 0 auto;
+		width: auto;
+	}
+
+	#contact-form .instructions {
+		margin: 0 0 3em;
 	}
 
 	#features {
@@ -707,6 +752,21 @@ section,
 		clip-path: none;
 		margin-top: -1em;
 		padding: 2em 0 1em;
+		width: auto;
+	}
+
+	#team {
+		display: block;
+		font-size: 11pt;
+	}
+
+	#team .description,
+	#team .profile {
+		border-right: 0;
+		width: auto;
+	}
+
+	#team .profile h3 {
 		width: auto;
 	}
 
